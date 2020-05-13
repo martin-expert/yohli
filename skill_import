@@ -1,0 +1,2 @@
+PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /Users/emmanuel/laravel/yohli/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php on line 61
+PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) in /Users/emmanuel/laravel/yohli/vendor/symfony/debug/Exception/FatalErrorException.php on line 1
