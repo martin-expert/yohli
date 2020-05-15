@@ -77,6 +77,7 @@ Route::get('posts/tags', 'BlogController@tags');
 Route::get('posts/categories', 'BlogController@categories');
 Route::get('posts/featured', 'BlogController@featured_posts');
 Route::get('posts/trending', 'BlogController@trending_posts');
+Route::get('checking/test', 'CheckingController@index');
 
 
 
