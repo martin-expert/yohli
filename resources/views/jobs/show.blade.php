@@ -127,7 +127,7 @@
 							<div class="bids-content">
 								<!-- Name -->
 								<div class="freelancer-name">
-									<h4><a href="../freelancers/{{ $bid->profile->uuid }}"> {{ $bid->profile->name }} <img class="flag" src="{{ asset('assets/images/flags/'. strtolower($job->owner->profile->country->code.'.svg')) }}"  title="{{ $job->owner->profile->country->name }}" data-tippy-placement="top" alt=""> {{ $job->owner->profile->country->name ?? "N/A" }} </a></h4>
+									<h4><a href="../freelancers/{{ $bid->profile->uuid }}"> {{ $bid->profile->name }} <img class="flag" src="{{ asset('assets/images/flags/'. strtolower($bid->profile->country->code.'.svg')) }}"  title="{{ $bid->profile->country->name }}" data-tippy-placement="top" alt=""> {{ $bid->profile->country->name ?? "N/A" }} </a></h4>
 									<div class="star-rating" data-rating="{{ $bid->profile->rating ?? 0 }}"></div>
 								</div>
 							</div>
