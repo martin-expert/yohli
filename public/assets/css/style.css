@@ -14118,6 +14118,48 @@ text-overflow: ellipsis; */
 	padding: 8px 12px;
 }
 
+/* Bid Status */
+.bid-status .status-badge {
+	margin-left: 15px;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 5px 7px;
+    text-transform: capitalize;
+}
+.bid-status .status-pending {
+    background: #eee;
+}
+.bid-status .status-accepted {
+	background: #38b653;
+    color: #fff;
+}
+
+/* Bid Action */
+.bid-actions {
+	padding-left: 110px;
+	margin-top: 5px;
+}
+
+.bid-actions button, .bid-actions > a {
+	padding: .375rem 1.25rem;
+}
+
+.bid-actions button:hover, 
+.bid-actions button:focus {
+	outline: 0;
+}
+
+.bid-actions .button-accept {
+	background: #38b653;
+	color: #fff;
+	border-color: #38b653;
+	border-radius: 1px;
+}
+
+.bid-actions .button-ignore:hover {
+	color: #ea7c11;
+}
+
 .boxed-list ul.boxed-list-ul > li:nth-child(2n) .bid-rate {
 	background: #f2f2f2;
 }

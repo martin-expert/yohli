@@ -41,7 +41,7 @@
         "owen-it/laravel-auditing": "^9.3",
         "paypal/rest-api-sdk-php": "^1.14",
         "predis/predis": "^1.1",
-        "pusher/pusher-php-server": "~3.0",
+        "pusher/pusher-php-server": "~2.0",
         "spatie/laravel-cors": "^1.6",
         "spatie/laravel-event-sourcing": "^2.0",
         "spatie/laravel-medialibrary": "^7.0.0",
@@ -49,6 +49,7 @@
         "spatie/laravel-schemaless-attributes": "^1.6",
         "spatie/nova-backup-tool": "^3.5",
         "themsaid/nova-cashier-manager": "^0.2.1",
+        "tightenco/nova-stripe": "^0.2.4",
         "torann/currency": "^1.0",
         "torann/geoip": "^1.1",
         "yoeunes/toastr": "^1.2"

@@ -2,7 +2,7 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-import Echo from 'laravel-echo'
+import EchoLibrary from 'laravel-echo'
 
 window.Moment = require('moment-timezone');
 
@@ -14,10 +14,26 @@ window.VueChatScroll = VueChatScroll;
 
 let isProduction = process.env.MIX_WS_CONNECT_PRODUCTION === 'true';
 
-window.Echo = new Echo({
+// window.Echo = new Echo({
+//     broadcaster: 'pusher',
+//     key: "0b580d9d86bcbaeb4ec7",
+//     cluster: 'us3',
+//     forceTLS: true,
+// });
+
+window.axios.defaults.headers.common = {
+    // 'X-CSRF-TOKEN': window.Laravel.csrfToken, <-- Comment it out (if you are extending layouts.app file, you won't require this.)
+    'X-Requested-With': 'XMLHttpRequest'
+};
+
+window.Echo = new EchoLibrary({
     broadcaster: 'pusher',
-    key: process.env.MIX_PUSHER_APP_KEY,
-    cluster: 'mt1',
-    forceTLS: true,
+    key: '0b580d9d86bcbaeb4ec7',
+    cluster: 'us3',
+    encrypted : true
 });
 
+Echo.channel('chat-room.1')
+    .listen('ChatMessageWasReceived', (e) => {
+        console.log(e);
+    });

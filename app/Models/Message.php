@@ -15,6 +15,7 @@ class Message extends Model implements HasMedia
     protected $fillable = [
         'body',
         'participation_id',
+        'conversation_id',
         'type',
     ];
     protected $table = 'messages';
@@ -122,6 +123,7 @@ class Message extends Model implements HasMedia
         $message = self::find($message->id);
         
         broadcast(new MessageWasSent($message))->toOthers();
+        // event(new MessageWasSent($message));
     
         self::createNotifications($message);
         return $message;

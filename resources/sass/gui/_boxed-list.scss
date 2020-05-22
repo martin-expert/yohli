@@ -187,6 +187,33 @@
   }
 }
 
+/* Bid Action */
+.bid-actions {
+  padding-left: 110px;
+  margin-top: 5px;
+
+  button {
+    padding: .375rem 1.25rem;
+
+    &:hover, &:focus, &:visited {
+      outline: 0;
+    }
+  }
+
+  .button-accept {
+    background: #38b653;
+    color: #fff;
+    border-color: #38b653;
+    border-radius: 1px;
+  }
+
+  .button-ignore {
+    & :hover {
+      color: #ea7c11;
+    }
+  }
+}
+
 /* Bid Rate */
 
 .bid-rate {
